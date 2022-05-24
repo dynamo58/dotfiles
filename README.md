@@ -10,7 +10,7 @@ Setup
 - OS: Arch Linux
 - DE: Xfce 4
 - WM: Xfwm4
-- Audio: PulseAudio
+- Audio: PipeWire
 - AUR helper: yay
 - Shell: bash
 
