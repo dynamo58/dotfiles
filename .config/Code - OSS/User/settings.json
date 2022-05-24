@@ -1,0 +1,74 @@
+{
+    "editor.tabSize": 4,
+    "editor.insertSpaces": false,
+    "editor.detectIndentation": true,
+    "editor.fontFamily": "'Hasklig'",
+    "editor.fontWeight": "600",
+    "editor.wordWrap": "on",
+    "editor.minimap.enabled": false,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "explorer.confirmDelete": false,
+    "editor.suggestSelection": "first",
+    "workbench.editor.untitled.hint": "hidden",
+    "security.workspace.trust.untrustedFiles": "open",
+    "extensions.ignoreRecommendations": true,
+    "workbench.startupEditor": "none",
+    "security.workspace.trust.startupPrompt": "never",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook",
+        "*.pdf": "default",
+        "*.docx": "default"
+    },
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "editor.cursorBlinking": "solid",
+    "editor.cursorStyle": "block",
+    "prettier.tabWidth": 4,
+    "explorer.confirmDragAndDrop": false,
+    "git.confirmSync": false,
+    "security.workspace.trust.banner": "never",
+    "terminal.integrated.fontSize": 15,
+    "texlab.server.autoDownload": false,
+    "git.enableSmartCommit": true,
+    "rust-analyzer.callInfo.full": false,
+    "rust-analyzer.inlayHints.enable": false,
+    "editor.guides.bracketPairsHorizontal": false,
+    "editor.guides.highlightActiveBracketPair": false,
+    "editor.fontLigatures": true,
+    "workbench.colorCustomizations": {
+        "editor.background": "#303030",
+    },
+    "workbench.activityBar.visible": false,
+    "workbench.iconTheme": "simple-icons",
+    "security.workspace.trust.enabled": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.rulers": [
+        80,
+        120
+    ],
+    "[typescript]": {
+        "editor.defaultFormatter": "denoland.vscode-deno"
+    },
+    "deno.codeLens.test": false,
+    "deno.enable": true,
+    "rust-analyzer.cargo.allFeatures": true,
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": false
+    },
+    "editor.formatOnPaste": true,
+    "liveServer.settings.donotVerifyTags": true,
+    "editor.bracketPairColorization.enabled": false,
+    "workbench.colorTheme": "Zenburn",
+    "git.autofetch": true
+}
