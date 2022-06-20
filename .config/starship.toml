@@ -16,3 +16,18 @@ disabled = true
 
 [cmd_duration]
 disabled = true
+
+[nodejs]
+disabled=true
+
+[rust]
+disabled=true
+
+[git_branch]
+disabled=true
+
+[git_status]
+disabled=true
+
+[package]
+disabled=true

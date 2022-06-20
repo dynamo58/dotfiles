@@ -18,9 +18,6 @@ xinput set-prop $(xinput list "pointer:Logitech G305" | grep id= | cut -d=   -f2
 # setup hdd
 mount /dev/sdb1 /hdd &
 
-xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitorHDMI-1-2/workspace0/last-image -s /hdd/data/fotky/tapety/red_star.png
-xfconf-query -c xfce4-desktop -p /backdrop/screen0/monitorHDMI-3/workspace0/last-image -s /hdd/data/fotky/tapety/b3592b0702998592368d3b4d4c45878382.jpg
-
 # initiate keybind listener
 # xbindkeys -f /home/$(logname)/.xbindkeysrc &
 

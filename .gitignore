@@ -4,30 +4,41 @@
 !.autostart.sh
 !.bashrc
 !.xbindkeysrc
+!.Xresources
+!.dmrc
 !README.md
 
 THIS_IS_UTERLY_FUCKING_RETARDED
 !.config/
+
 !.config/Code - OSS/
 !.config/Code - OSS/User/
 !.config/Code - OSS/User/keybindings.json
 !.config/Code - OSS/User/settings.json
+
 !.config/mpv/
 !.config/mpv/input.conf
 !.config/mpv/mpv.conf
+
 !.config/nvim/
 !.config/nvim/init.vim
 !.config/nvim/colors
 !.config/nvim/colors/pixelmuerto.vim
+
 !.config/kitty/
 !.config/kitty/kitty.conf
+
 !.config/polybar/
 !.config/polybar/config
+
 !.config/kazam
 !.config/kazam/kazam.conf
+
 !.config/xfce4/
 !.config/xfce4/helpers.rc
+
 !.config/xfce4/xfce4-screenshooter
+
 !.config/xfce4/xfconf/
 !.config/xfce4/xfconf/xfce-perchannel-xml/
 !.config/xfce4/xfconf/xfce-perchannel-xml/displays.xml                  
@@ -49,8 +60,22 @@ THIS_IS_UTERLY_FUCKING_RETARDED
 !.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml  
 !.config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
 !.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-mime-settings.xml
+
 !.config/starship.toml
 
 !.themes
 !.themes/vacui/
 !.themes/vacui/themerc
+
+!.fonts
+!.fonts/BorgSansMono.ttf
+!.fonts/Hasklig-Regular.ttf
+!.fonts/Hasklig-Regular.ttf
+!.fonts/iosevka-regular.ttf
+!.fonts/Lucida Console.ttf
+!.fonts/SourceHanSansCN-Normal.otf
+!.fonts/unscii-8.ttf
+!.fonts/VictorMono-Bold.ttf
+!.fonts/VictorMono-Italic.ttf
+!.fonts/VictorMono-Regular.ttf
+!.fonts/VT323-Regular.ttf

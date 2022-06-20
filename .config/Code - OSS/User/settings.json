@@ -2,11 +2,10 @@
     "editor.tabSize": 4,
     "editor.insertSpaces": false,
     "editor.detectIndentation": true,
-    "editor.fontFamily": "'Hasklig'",
-    "editor.fontWeight": "600",
+    "editor.fontFamily": "'Borg Sans Mono'",
+    "editor.fontWeight": "620",
     "editor.wordWrap": "on",
     "editor.minimap.enabled": false,
-    "liveServer.settings.donotShowInfoMsg": true,
     "explorer.confirmDelete": false,
     "editor.suggestSelection": "first",
     "workbench.editor.untitled.hint": "hidden",
@@ -25,12 +24,10 @@
     },
     "editor.cursorBlinking": "solid",
     "editor.cursorStyle": "block",
-    "prettier.tabWidth": 4,
     "explorer.confirmDragAndDrop": false,
     "git.confirmSync": false,
     "security.workspace.trust.banner": "never",
     "terminal.integrated.fontSize": 15,
-    "texlab.server.autoDownload": false,
     "git.enableSmartCommit": true,
     "rust-analyzer.callInfo.full": false,
     "rust-analyzer.inlayHints.enable": false,
@@ -38,7 +35,7 @@
     "editor.guides.highlightActiveBracketPair": false,
     "editor.fontLigatures": true,
     "workbench.colorCustomizations": {
-        "editor.background": "#303030",
+        // "editor.background": "#303030",
     },
     "workbench.activityBar.visible": false,
     "workbench.iconTheme": "simple-icons",
@@ -67,8 +64,8 @@
         "editor.wordBasedSuggestions": false
     },
     "editor.formatOnPaste": true,
-    "liveServer.settings.donotVerifyTags": true,
     "editor.bracketPairColorization.enabled": false,
-    "workbench.colorTheme": "Zenburn",
-    "git.autofetch": true
+    "workbench.colorTheme": "One Dark Pro Flat",
+    "git.autofetch": true,
+    "window.zoomLevel": -1
 }
