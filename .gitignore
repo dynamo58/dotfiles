@@ -6,6 +6,8 @@
 !.xbindkeysrc
 !.Xresources
 !.dmrc
+!.tmux.conf
+
 !README.md
 
 THIS_IS_UTERLY_FUCKING_RETARDED
@@ -62,6 +64,9 @@ THIS_IS_UTERLY_FUCKING_RETARDED
 !.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-mime-settings.xml
 
 !.config/starship.toml
+
+!.config/alacritty
+!.config/alacritty/alacritty.yml
 
 !.themes
 !.themes/vacui/

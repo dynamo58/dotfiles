@@ -1,0 +1,165 @@
+#import:
+#  - /path/to/alacritty.yml
+
+window:
+  padding:
+    x: 10
+    y: 10
+  opacity: 0.85
+  startup_mode: Maximized
+font:
+  normal:
+    family: Hasklig
+    #style: Regular
+  #bold:
+    #family: monospace
+    #style: Bold
+  #italic:
+    #family: monospace
+    #style: Italic
+  #bold_italic:
+    #family: monospace
+    #style: Bold Italic
+  size: 14.0
+
+#-------------------------------------------------------------------------------
+#   THEMES
+#-------------------------------------------------------------------------------
+colors:
+
+# Gruvbox Material
+# yoinked from https://github.com/eendroroy/alacritty-theme/blob/master/themes/gruvbox_material.yml
+  # primary:
+  #   background: '0x282828'
+  #   foreground: '0xdfbf8e'
+  # normal:
+  #   black:   '0x665c54'
+  #   red:     '0xea6962'
+  #   green:   '0xa9b665'
+  #   yellow:  '0xe78a4e'
+  #   blue:    '0x7daea3'
+  #   magenta: '0xd3869b'
+  #   cyan:    '0x89b482'
+  #   white:   '0xdfbf8e'
+  # bright:
+  #   black:   '0x928374'
+  #   red:     '0xea6962'
+  #   green:   '0xa9b665'
+  #   yellow:  '0xe3a84e'
+  #   blue:    '0x7daea3'
+  #   magenta: '0xd3869b'
+  #   cyan:    '0x89b482'
+  #   white:   '0xdfbf8e'
+
+
+#-------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------
+
+# Base16 Default Dark
+# yoinked from https://github.com/eendroroy/alacritty-theme/blob/master/themes/base16_default_dark.yaml
+#   primary:
+#     background: '0x181818'
+#     foreground: '0xd8d8d8'
+#   cursor:
+#     text: '0xd8d8d8'
+#     cursor: '0xd8d8d8'
+#   normal:
+#     black:   '0x181818'
+#     red:     '0xab4642'
+#     green:   '0xa1b56c'
+#     yellow:  '0xf7ca88'
+#     blue:    '0x7cafc2'
+#     magenta: '0xba8baf'
+#     cyan:    '0x86c1b9'
+#     white:   '0xd8d8d8'
+#   bright:
+#     black:   '0x585858'
+#     red:     '0xab4642'
+#     green:   '0xa1b56c'
+#     yellow:  '0xf7ca88'
+#     blue:    '0x7cafc2'
+#     magenta: '0xba8baf'
+#     cyan:    '0x86c1b9'
+#     white:   '0xf8f8f8'
+
+
+# -------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------
+
+# Tomorrow Night (default)
+  normal:
+    black:   '#1d1f21'
+    red:     '#cc6666'
+    green:   '#b5bd68'
+    yellow:  '#f0c674'
+    blue:    '#81a2be'
+    magenta: '#b294bb'
+    cyan:    '#8abeb7'
+    white:   '#c5c8c6'
+  bright:
+    black:   '#666666'
+    red:     '#d54e53'
+    green:   '#b9ca4a'
+    yellow:  '#e7c547'
+    blue:    '#7aa6da'
+    magenta: '#c397d8'
+    cyan:    '#70c0b1'
+    white:   '#eaeaea'
+  dim:
+    black:   '#131415'
+    red:     '#864343'
+    green:   '#777c44'
+    yellow:  '#9e824c'
+    blue:    '#556a7d'
+    magenta: '#75617b'
+    cyan:    '#5b7d78'
+    white:   '#828482'
+
+
+# ------------------------------------------------------------------------------
+
+selection:
+  save_to_clipboard: true
+
+cursor:
+  unfocused_hollow: true
+  thickness: 0.5
+
+#shell:
+#  program: /bin/bash
+#  args:
+#    - --login
+
+#mouse:
+  #double_click: { threshold: 300 }
+  #triple_click: { threshold: 300 }
+  #hide_when_typing: false
+
+#mouse_bindings:
+#  - { mouse: Right,                 action: ExpandSelection }
+#  - { mouse: Right,  mods: Control, action: ExpandSelection }
+#  - { mouse: Middle, mode: ~Vi,     action: PasteSelection  }
+
+#key_bindings:
+  #- { key: Paste,                                       action: Paste          }
+  #- { key: Copy,                                        action: Copy           }
+  #- { key: L,         mods: Control,                    action: ClearLogNotice }
+  #- { key: L,         mods: Control, mode: ~Vi|~Search, chars: "\x0c"          }
+  #- { key: PageUp,    mods: Shift,   mode: ~Alt,        action: ScrollPageUp   }
+  #- { key: PageDown,  mods: Shift,   mode: ~Alt,        action: ScrollPageDown }
+  #- { key: Home,      mods: Shift,   mode: ~Alt,        action: ScrollToTop    }
+  #- { key: End,       mods: Shift,   mode: ~Alt,        action: ScrollToBottom }
+
+  # (Windows, Linux, and BSD only)
+  #- { key: V,              mods: Control|Shift, mode: ~Vi,        action: Paste            }
+  #- { key: C,              mods: Control|Shift,                   action: Copy             }
+  #- { key: F,              mods: Control|Shift, mode: ~Search,    action: SearchForward    }
+  #- { key: B,              mods: Control|Shift, mode: ~Search,    action: SearchBackward   }
+  #- { key: C,              mods: Control|Shift, mode: Vi|~Search, action: ClearSelection   }
+  #- { key: Insert,         mods: Shift,                           action: PasteSelection   }
+  #- { key: Key0,           mods: Control,                         action: ResetFontSize    }
+  #- { key: Equals,         mods: Control,                         action: IncreaseFontSize }
+  #- { key: Plus,           mods: Control,                         action: IncreaseFontSize }
+  #- { key: NumpadAdd,      mods: Control,                         action: IncreaseFontSize }
+  #- { key: Minus,          mods: Control,                         action: DecreaseFontSize }
+  #- { key: NumpadSubtract, mods: Control,                         action: DecreaseFontSize }

@@ -13,7 +13,7 @@ alias reload_font_cache='fc-cache -f -v'
 PS1='[\u@\h \W]\$ '
 
 eval "$(starship init bash)"
-tmux a
+tmux new -A -s main
 
 
 # wrapper for the `find` command
@@ -41,31 +41,31 @@ ytmp3() {
     yt-dlp $1 --extract-audio --audio-format mp3
 }
 
-backup_to_hdd() {
-    rm -rf /hdd/backups/home/*
-    cp -r  /home/$(logname)/.config       /hdd/backups/home/
-    rm -rf /hdd/backups/home/.config/discord
-    rm -rf /hdd/backups/home/.config/Code\ -\ OSS/Cach*
-    rm -rf /hdd/backups/home/.config/Code\ -\ OSS/User/globalStorage
-    rm -rf /hdd/backups/home/.config/Code\ -\ OSS/User/History
-    rm -rf /hdd/backups/home/.config/Code\ -\ OSS/User/snippets
-    rm -rf /hdd/backups/home/.config/Code\ -\ OSS/User/workspaceStorage
-    cp -r  /home/$(logname)/bin           /hdd/backups/home/
-    cp -r  /home/$(logname)/scripts       /hdd/backups/home/
-    cp -r  /home/$(logname)/.autostart.sh /hdd/backups/home/
-    cp -r  /home/$(logname)/.bashrc       /hdd/backups/home/
-    cp -r  /home/$(logname)/.gitignore    /hdd/backups/home/
-    cp -r  /home/$(logname)/README.md     /hdd/backups/home/
-    rsync -r \
-        --exclude '.git' \
-        --exclude 'target' \
-        --exclude '.local' \
-        --exclude '.cache' \
-        --exclude '.local' \
-        --exclude 'node_modules' \
-        /home/$(logname)/projects \
-        /hdd/backups/home/
-}
+# backup_to_hdd() {
+#     rm -rf /hdd/backups/home/*
+#     cp -r  /home/$(logname)/.config       /hdd/backups/home/
+#     rm -rf /hdd/backups/home/.config/discord
+#     rm -rf /hdd/backups/home/.config/Code\ -\ OSS/Cach*
+#     rm -rf /hdd/backups/home/.config/Code\ -\ OSS/User/globalStorage
+#     rm -rf /hdd/backups/home/.config/Code\ -\ OSS/User/History
+#     rm -rf /hdd/backups/home/.config/Code\ -\ OSS/User/snippets
+#     rm -rf /hdd/backups/home/.config/Code\ -\ OSS/User/workspaceStorage
+#     cp -r  /home/$(logname)/bin           /hdd/backups/home/
+#     cp -r  /home/$(logname)/scripts       /hdd/backups/home/
+#     cp -r  /home/$(logname)/.autostart.sh /hdd/backups/home/
+#     cp -r  /home/$(logname)/.bashrc       /hdd/backups/home/
+#     cp -r  /home/$(logname)/.gitignore    /hdd/backups/home/
+#     cp -r  /home/$(logname)/README.md     /hdd/backups/home/
+#     rsync -r \
+#         --exclude '.git' \
+#         --exclude 'target' \
+#         --exclude '.local' \
+#         --exclude '.cache' \
+#         --exclude '.local' \
+#         --exclude 'node_modules' \
+#         /home/$(logname)/projects \
+#         /hdd/backups/home/
+# }
 
 # Append stuff to PATH
 export PATH="$HOME/scripts:$PATH"
