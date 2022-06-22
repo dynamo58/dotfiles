@@ -25,24 +25,25 @@ Setup
 Terminal & environment
 - Terminal:             alacritty
 - Terminal prompt:      starship
-- Bar:                  polybar
-- Theme:                Adwaita-dark
+- Bar:                  yabar
+- GTK Theme:            Adwaita-dark
 - File explorer:        Thunar / ranger
 - Application launcher: xfce4-appfinder
 - Browser:              Firefox (developer edition)
+- Text editor:          nvim / VSCodium (de-microsofted build of VSCode)
 - Code editor:          VSCodium
 
 Media
 - Image viewing: sxiv
 - Image editor:  GIMP
 - Video viewing: mpv
-- Video editor:  Kdenlive/ffmpeg
+- Video editor:  Kdenlive / FFmpeg
 - Music player:  cmus (+cava)
-- Recording:     kazam
+- Recording:     OBS / kazam
 - Screenshots:   xfce4-screenshoter
 - PDF viewer:    mupdf
 
 Other programs worth mentioning
 - [piper](https://github.com/libratbag/piper)         - mouse configuration
 - [filelight](https://github.com/KDE/filelight)       - disk space visualization
-- [calcure](https://github.com/anufrievroman/calcure) - TUI calendar
+

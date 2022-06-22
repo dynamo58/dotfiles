@@ -9,7 +9,7 @@ window:
   startup_mode: Maximized
 font:
   normal:
-    family: Hasklig
+    family: unscii # Hasklig
     #style: Regular
   #bold:
     #family: monospace
@@ -20,7 +20,7 @@ font:
   #bold_italic:
     #family: monospace
     #style: Bold Italic
-  size: 14.0
+  size: 16.0
 
 #-------------------------------------------------------------------------------
 #   THEMES

@@ -61,7 +61,7 @@
         <property name="workspace0" type="empty">
           <property name="color-style" type="int" value="0"/>
           <property name="image-style" type="int" value="3"/>
-          <property name="last-image" type="string" value="/home/smolik/Desktop/ltd65be9j1491.jpg"/>
+          <property name="last-image" type="string" value="/home/smolik/Pictures/wallpapers/ltd65be9j1491.jpg"/>
           <property name="backdrop-cycle-enable" type="bool" value="false"/>
         </property>
         <property name="workspace1" type="empty">
@@ -78,7 +78,7 @@
     </property>
   </property>
   <property name="last" type="empty">
-    <property name="window-width" type="int" value="1238"/>
-    <property name="window-height" type="int" value="809"/>
+    <property name="window-width" type="int" value="715"/>
+    <property name="window-height" type="int" value="566"/>
   </property>
 </channel>

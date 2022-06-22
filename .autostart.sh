@@ -8,9 +8,10 @@ function run() {
 }
 
 # setup panel
-killall xfce4-panel
+killall xfce4-panel > /dev/null 2>&1
 killall polybar
-run polybar --config=/home/$(logname)/.config/polybar/config main
+
+run polybar --config=/home/$(logname)/.config/polybar/config.ini main
 
 # enable scrolling via middle mouse button
 xinput set-prop $(xinput list "pointer:Logitech G305" | grep id= | cut -d=   -f2 | awk '{print $1}') "libinput Scroll Method Enabled" 0, 0, 1 &

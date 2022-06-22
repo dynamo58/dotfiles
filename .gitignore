@@ -31,7 +31,8 @@ THIS_IS_UTERLY_FUCKING_RETARDED
 !.config/kitty/kitty.conf
 
 !.config/polybar/
-!.config/polybar/config
+!.config/polybar/config.ini
+!.config/polybar/get_weather.sh
 
 !.config/kazam
 !.config/kazam/kazam.conf
