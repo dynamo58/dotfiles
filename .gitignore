@@ -33,36 +33,13 @@ THIS_IS_UTERLY_FUCKING_RETARDED
 !.config/polybar/
 !.config/polybar/config.ini
 !.config/polybar/get_weather.sh
+!.config/polybar/get_mpv_playing.sh
 
 !.config/kazam
 !.config/kazam/kazam.conf
 
 !.config/xfce4/
-!.config/xfce4/helpers.rc
-
 !.config/xfce4/xfce4-screenshooter
-
-!.config/xfce4/xfconf/
-!.config/xfce4/xfconf/xfce-perchannel-xml/
-!.config/xfce4/xfconf/xfce-perchannel-xml/displays.xml                  
-!.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-notifyd.xml
-!.config/xfce4/xfconf/xfce-perchannel-xml/keyboard-layout.xml           
-!.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
-!.config/xfce4/xfconf/xfce-perchannel-xml/parole.xml                    
-!.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-power-manager.xml
-!.config/xfce4/xfconf/xfce-perchannel-xml/pointers.xml                  
-!.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-screensaver.xml
-!.config/xfce4/xfconf/xfce-perchannel-xml/ristretto.xml                 
-!.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-session.xml
-!.config/xfce4/xfconf/xfce-perchannel-xml/thunar.xml                    
-!.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-settings-editor.xml
-!.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-appfinder.xml           
-!.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-settings-manager.xml
-!.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml             
-!.config/xfce4/xfconf/xfce-perchannel-xml/xfwm4.xml
-!.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml  
-!.config/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
-!.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-mime-settings.xml
 
 !.config/starship.toml
 
