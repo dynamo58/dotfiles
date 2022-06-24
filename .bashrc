@@ -49,32 +49,6 @@ mpv-music() {
     mpv --vo=null --video=no --no-video --term-osd-bar --no-resume-playback --shuffle $1
 }
 
-# backup_to_hdd() {
-#     rm -rf /hdd/backups/home/*
-#     cp -r  /home/$(logname)/.config       /hdd/backups/home/
-#     rm -rf /hdd/backups/home/.config/discord
-#     rm -rf /hdd/backups/home/.config/Code\ -\ OSS/Cach*
-#     rm -rf /hdd/backups/home/.config/Code\ -\ OSS/User/globalStorage
-#     rm -rf /hdd/backups/home/.config/Code\ -\ OSS/User/History
-#     rm -rf /hdd/backups/home/.config/Code\ -\ OSS/User/snippets
-#     rm -rf /hdd/backups/home/.config/Code\ -\ OSS/User/workspaceStorage
-#     cp -r  /home/$(logname)/bin           /hdd/backups/home/
-#     cp -r  /home/$(logname)/scripts       /hdd/backups/home/
-#     cp -r  /home/$(logname)/.autostart.sh /hdd/backups/home/
-#     cp -r  /home/$(logname)/.bashrc       /hdd/backups/home/
-#     cp -r  /home/$(logname)/.gitignore    /hdd/backups/home/
-#     cp -r  /home/$(logname)/README.md     /hdd/backups/home/
-#     rsync -r \
-#         --exclude '.git' \
-#         --exclude 'target' \
-#         --exclude '.local' \
-#         --exclude '.cache' \
-#         --exclude '.local' \
-#         --exclude 'node_modules' \
-#         /home/$(logname)/projects \
-#         /hdd/backups/home/
-# }
-
 # Append stuff to PATH
 export PATH="$HOME/scripts:$PATH"
 

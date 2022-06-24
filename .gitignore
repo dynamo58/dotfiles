@@ -13,14 +13,17 @@
 THIS_IS_UTERLY_FUCKING_RETARDED
 !.config/
 
-!.config/Code - OSS/
-!.config/Code - OSS/User/
-!.config/Code - OSS/User/keybindings.json
-!.config/Code - OSS/User/settings.json
+!.config/VSCodium/
+!.config/VSCodium/User/
+!.config/VSCodium/User/keybindings.json
+!.config/VSCodium/User/settings.json
 
 !.config/mpv/
 !.config/mpv/input.conf
 !.config/mpv/mpv.conf
+
+!.config/kazam
+!.config/kazam/kazam.conf
 
 !.config/nvim/
 !.config/nvim/init.vim
@@ -30,10 +33,17 @@ THIS_IS_UTERLY_FUCKING_RETARDED
 !.config/kitty/
 !.config/kitty/kitty.conf
 
+!.config/ranger/
+!.config/ranger/rc.conf
+
 !.config/polybar/
 !.config/polybar/config.ini
-!.config/polybar/get_weather.sh
-!.config/polybar/get_mpv_playing.sh
+!.config/polybar/scripts
+!.config/polybar/scripts/get_weather.sh
+!.config/polybar/mpv
+!.config/polybar/mpv/pause.sh
+!.config/polybar/mpv/skip.sh
+!.config/polybar/mpv/current.sh
 
 !.config/kazam
 !.config/kazam/kazam.conf
@@ -51,6 +61,8 @@ THIS_IS_UTERLY_FUCKING_RETARDED
 !.themes/vacui/themerc
 
 !.fonts
+!.fonts/Hasklug Nerd Font Complete Mono.otf
+!.fonts/unscii-16-full.ttf
 !.fonts/BorgSansMono.ttf
 !.fonts/Hasklig-Regular.ttf
 !.fonts/Hasklig-Regular.ttf
