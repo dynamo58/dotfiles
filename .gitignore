@@ -13,6 +13,11 @@
 THIS_IS_UTERLY_FUCKING_RETARDED
 !.config/
 
+!.config/wall.jpg
+
+!.config/rofi
+!.config/rofi/config.rasi
+
 !.config/VSCodium/
 !.config/VSCodium/User/
 !.config/VSCodium/User/keybindings.json
