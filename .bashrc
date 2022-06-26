@@ -10,6 +10,7 @@ alias siuuuuu='sudo pacman -Syyu; yay -Syyu'
 alias run_twitch_bot='cd ~/programming/twitch-bot; clear; cargo run'
 alias reload_font_cache='fc-cache -f -v'
 alias t='tmux new -A -s main'
+alias hx='helix'
 
 
 PS1='[\u@\h \W]\$ '
@@ -39,7 +40,7 @@ sysuse() {
 # wrapper for yt-dlp audio extraction
 # example: ytmp3 <link>
 ytmp3() {
-    yt-dlp $1 --extract-audio --audio-format mp3
+    yt-dlp -ciw --extract-audio --audio-format mp3 $1
 }
 
 # wrapper to use mpv as a music player

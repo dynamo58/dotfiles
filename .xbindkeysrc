@@ -43,5 +43,9 @@
     m:0x15 + c:52
     Control+Shift+Mod2 + y 
 
+"rofi -show run"
+    m:0x18 + c:64
+    Alt+Mod2 + Alt_L 
+
 #
 # End of xbindkeys configuration

@@ -2,13 +2,16 @@
 
 
 <div align="center">
+	<img src=".screen.png" />
+</div>
+
+<div align="center">
 	⚠ ⚠ ⚠  DISCLAIMER ⚠ ⚠ ⚠ ⚠ ⚠<br>
 	--- <br>
 	Some of the content here was not made by me.<br>
 	When it is like a theme I try to credit with the link to the source.<br>
 	Other times (fonts, papes e.g.) that is not the case.
 </div>
-
 
 ## Programs
 
@@ -46,4 +49,3 @@ Media
 Other programs worth mentioning
 - [piper](https://github.com/libratbag/piper)         - mouse configuration
 - [filelight](https://github.com/KDE/filelight)       - disk space visualization
-
