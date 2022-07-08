@@ -21,6 +21,16 @@ THIS_IS_UTERLY_FUCKING_RETARDED
 
 !.config/wall.jpg
 
+!.local/
+!.local/share/
+!.local/share/chatterino/
+!.local/share/chatterino/Settings/
+!.local/share/chatterino/Settings/commands.json
+!.local/share/chatterino/Settings/window-layout.json
+!.local/share/chatterino/Settings/settings.json
+
+
+
 !.config/helix
 !.config/helix/config.toml
 !.config/helix/languages.toml
