@@ -20,7 +20,7 @@ xinput set-prop $(xinput list "pointer:Logitech G305" | grep id= | cut -d=   -f2
 mount /dev/sdb1 /hdd
 
 # initiate keybind listener
-xbindkeys -f $HOME/.xbindkeysrc
+xbindkeys -f /home/$(logname)/.xbindkeysrc
 
 # set wallpapers
-xwallpaper --zoom /home/$(logname)/.config/wall.jpg --output HDMI-8 --output HDMI-1-2
+xwallpaper --zoom /home/$(logname)/.config/wall.jpg --output HDMI-0 --output HDMI-1-2

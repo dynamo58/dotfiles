@@ -2,10 +2,10 @@
     "editor.tabSize": 4,
     "editor.insertSpaces": false,
     "editor.detectIndentation": true,
-    "editor.fontFamily": "'Iosevka', 'Hasklug Nerd Font'",
-    "editor.fontWeight": "750",
+    "editor.fontFamily": "'Hasklug Nerd Font'",
+    "editor.fontWeight": "600",
     "editor.wordWrap": "on",
-    "editor.minimap.enabled": false,
+    "editor.minimap.enabled":false,
     "explorer.confirmDelete": false,
     "editor.suggestSelection": "first",
     "workbench.editor.untitled.hint": "hidden",
@@ -16,7 +16,8 @@
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook",
         "*.pdf": "default",
-        "*.docx": "default"
+        "*.docx": "default",
+        "*.excalidraw": "editor.excalidraw"
     },
     "notebook.cellToolbarLocation": {
         "default": "right",
@@ -35,7 +36,7 @@
     "editor.guides.highlightActiveBracketPair": false,
     "editor.fontLigatures": true,
     "workbench.colorCustomizations": {
-        // "editor.background": "#303030",
+        // "editor.background": "#202020",
     },
     "workbench.activityBar.visible": false,
     "workbench.iconTheme": "simple-icons",
@@ -65,7 +66,7 @@
     },
     "editor.formatOnPaste": true,
     "editor.bracketPairColorization.enabled": false,
-    "workbench.colorTheme": "One Dark Pro Flat",
+    "workbench.colorTheme": "One Dark Pro Mix",
     "git.autofetch": true,
     "window.zoomLevel": -1
 }

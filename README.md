@@ -23,7 +23,7 @@ Setup
 - WM:         Xfwm4
 - Audio:      PipeWire
 - AUR helper: yay
-- Shell:      bash
+- Shell:      zsh
 
 Terminal & environment
 - Terminal:             alacritty
@@ -41,10 +41,10 @@ Media
 - Image editor:  GIMP
 - Video viewing: mpv
 - Video editor:  Kdenlive / FFmpeg
-- Music player:  cmus (+cava)
+- Music player:  mpv
 - Recording:     OBS / kazam
 - Screenshots:   xfce4-screenshoter
-- PDF viewer:    mupdf
+- Document viewer: zathura (+mupdf)
 
 Other programs worth mentioning
 - [piper](https://github.com/libratbag/piper)         - mouse configuration

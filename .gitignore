@@ -12,7 +12,12 @@
 !README.md
 
 THIS_IS_UTERLY_FUCKING_RETARDED
+
+!.zshenv
+
 !.config/
+!.config/zsh
+!.config/.zshrc
 
 !.config/wall.jpg
 
@@ -20,6 +25,9 @@ THIS_IS_UTERLY_FUCKING_RETARDED
 !.config/helix/config.toml
 !.config/helix/languages.toml
 
+
+!.config/zsh/
+!.config/zsh/.zshrc
 
 !.config/rofi
 !.config/rofi/config.rasi
@@ -46,6 +54,12 @@ THIS_IS_UTERLY_FUCKING_RETARDED
 
 !.config/ranger/
 !.config/ranger/rc.conf
+
+!.config/bat/
+!.config/bat/config
+
+!.config/kazam/
+!.config/kazam/kazam.conf
 
 !.config/polybar/
 !.config/polybar/config.ini
@@ -85,3 +99,9 @@ THIS_IS_UTERLY_FUCKING_RETARDED
 !.fonts/VictorMono-Italic.ttf
 !.fonts/VictorMono-Regular.ttf
 !.fonts/VT323-Regular.ttf
+!.fonts/Garamond\ Bold.ttf
+!.fonts/Garamond\ Italic.TTF
+!.fonts/Garamond\ Regular.ttf
+!.fonts/ 
+!.fonts/
+!.fonts/

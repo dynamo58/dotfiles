@@ -1,9 +1,38 @@
 #
-# ~/.bashrc
+# .zshrc
+#
 
-# If not running interactively, don't do anything
-[[ $- != *i* ]] && return
+# Load colors
+autoload -U color
 
+# Disable CTRL-s from freezing your terminal's output.
+stty stop undef
+
+# Automatically cd into typed dir
+setopt autocd
+
+# Enable comments when working in an interactive shell.
+setopt interactive_comments
+
+# History settings.
+export HISTFILE="$HOME/.cache/history"
+export HISTTIMEFORMAT="%Y/%m/%d %H:%M:%S:   "
+export HISTSIZE=50000        # History lines stored in mememory.
+export SAVEHIST=50000        # History lines stored on disk.
+setopt INC_APPEND_HISTORY    # Immediately append commands to history file.
+setopt HIST_IGNORE_ALL_DUPS  # Never add duplicate entries.
+setopt HIST_IGNORE_SPACE     # Ignore commands that start with a space.
+setopt HIST_REDUCE_BLANKS    # Remove unnecessary blank lines.
+
+# Completion setup
+autoload -U compinit
+zstyle ':completion:*' menu select
+zmodload zsh/complist
+compinit
+# Include hidden files
+_comp_options+=(globdots)
+
+eval "$(starship init zsh)"
 
 alias code='vscodium'
 alias siuuuuu='yay -Syyu'
@@ -15,12 +44,6 @@ alias hx='helix'
 C="$HOME/.config"
 M="/hdd/media"
 P="$HOME/programming"
-
-
-PS1='[\u@\h \W]\$ '
-
-eval "$(starship init bash)"
-
 
 # wrapper for the `find` command
 f() {
@@ -64,8 +87,7 @@ mpv-music() {
         "$@"
 }
 
-# Append stuff to PATH
-# export PATH="$HOME/scripts:$PATH"
-
-# external context
-. "$HOME/.cargo/env"
+source "$HOME/.cargo/env"
+export PATH=/bin:/usr/bin:/usr/local/bin:${HOME}/.cargo/env:${PATH}
+source ~/.config/zsh/zsh-autosuggestions.zsh
+source ~/.config/zsh/fast-syntax-highlighting.plugin.zsh
