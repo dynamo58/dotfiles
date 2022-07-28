@@ -31,7 +31,7 @@ Terminal & environment
 - Bar:                  yabar
 - GTK Theme:            Adwaita-dark
 - File explorer:        Thunar / ranger
-- Application launcher: xfce4-appfinder
+- Application launcher: rofi
 - Browser:              Firefox (developer edition)
 - Text editor:          nvim / VSCodium (de-microsofted build of VSCode)
 - Code editor:          VSCodium

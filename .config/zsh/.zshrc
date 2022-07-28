@@ -34,6 +34,12 @@ _comp_options+=(globdots)
 
 eval "$(starship init zsh)"
 
+
+#
+#   Aliases & shortcuts
+#
+
+
 alias code='vscodium'
 alias siuuuuu='yay -Syyu'
 alias run_twitch_bot='cd ~/programming/twitch-bot; clear; cargo run'
@@ -44,6 +50,10 @@ alias hx='helix'
 C="$HOME/.config"
 M="/hdd/media"
 P="$HOME/programming"
+
+#
+#   Functions
+#
 
 # wrapper for the `find` command
 f() {
@@ -57,7 +67,8 @@ f() {
 cleanup() {
     rm -rf ~/.local/share/Trash/*
     rm ~/.python_history ~/.node_repl_history
-}               
+    yay -Scc
+}
 
 # a small info about resources taken up by a process (by name)
 # example: sysuse firefox
@@ -87,7 +98,10 @@ mpv-music() {
         "$@"
 }
 
-source "$HOME/.cargo/env"
+#
+#   Path modifiers & sourcings
+#
+
 export PATH=/bin:/usr/bin:/usr/local/bin:${HOME}/.cargo/env:${PATH}
 source ~/.config/zsh/zsh-autosuggestions.zsh
 source ~/.config/zsh/fast-syntax-highlighting.plugin.zsh

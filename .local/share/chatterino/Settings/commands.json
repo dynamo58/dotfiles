@@ -129,6 +129,22 @@
             "func": "{1} {1} ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ {1} {2} {1} ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ ⠀ {1} {1}"
         },
         {
+            "name": "/awwmustard",
+            "func": "Aww, mustard! Come on man, now don’t put no mustard on that, you need to put a little season on that thing! WHAT! Man come on get that pepper off there! Come on, somebody come get this man! Come on now, come on get that pepper of there, that’s just too much doggone pepper. I don’t wanna see this no more!"
+        },
+        {
+            "name": "/true",
+            "func": "True aaaaaaaaaaaand... Yeah, that's pretty true. That's true and- yeah that's true. That's true. That's true- That's pretty true. That's pretty true, I mean-... That's true. Yeah. That's true. Uhm- That's true. That's fuckin' true. Uhm... That's how it is dude. FeelsDankMan"
+        },
+        {
+            "name": "/",
+            "func": "TeaTime FeelsDankMan {1+}"
+        },
+        {
+            "name": "/dailyquest",
+            "func": "▬▬▬▬▬▬▬▬▬▬DAILY▬▬▬▬▬▬▬▬▬▬ ⠀⠀⠀⠀⠀⠀⠀ ZULUL SPAM THIS 50 TIMES ZULUL ▬▬▬▬▬▬▬▬▬▬QUEST▬▬▬▬▬▬▬▬▬"
+        },
+        {
             "name": "/command",
             "func": "I made a new command HeyGuys"
         }

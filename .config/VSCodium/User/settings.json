@@ -1,11 +1,18 @@
 {
+    // Set the default
+    "editor.formatOnSave": true,
+    // Enable per-language
+    // "[javascript]": {
+    // "editor.formatOnSave": true
+    // },
+    "editor.selectionClipboard": false, // disable pasting with middle mouse button
     "editor.tabSize": 4,
     "editor.insertSpaces": false,
     "editor.detectIndentation": true,
-    "editor.fontFamily": "'Hasklug Nerd Font'",
-    "editor.fontWeight": "600",
+    "editor.fontFamily": "'Iosevka', 'Hasklug Nerd Font', 'Iosevka'",
+    "editor.fontWeight": "640",
     "editor.wordWrap": "on",
-    "editor.minimap.enabled":false,
+    "editor.minimap.enabled": false,
     "explorer.confirmDelete": false,
     "editor.suggestSelection": "first",
     "workbench.editor.untitled.hint": "hidden",
@@ -35,10 +42,6 @@
     "editor.guides.bracketPairsHorizontal": false,
     "editor.guides.highlightActiveBracketPair": false,
     "editor.fontLigatures": true,
-    "workbench.colorCustomizations": {
-        // "editor.background": "#202020",
-    },
-    "workbench.activityBar.visible": false,
     "workbench.iconTheme": "simple-icons",
     "security.workspace.trust.enabled": false,
     "editor.multiCursorModifier": "ctrlCmd",
@@ -47,7 +50,7 @@
         120
     ],
     "[typescript]": {
-        "editor.defaultFormatter": "denoland.vscode-deno"
+        "editor.defaultFormatter": "vscode.typescript-language-features"
     },
     "deno.codeLens.test": false,
     "deno.enable": true,
@@ -66,7 +69,37 @@
     },
     "editor.formatOnPaste": true,
     "editor.bracketPairColorization.enabled": false,
-    "workbench.colorTheme": "One Dark Pro Mix",
+    "workbench.colorTheme": "Hybrid dim",
     "git.autofetch": true,
-    "window.zoomLevel": -1
+    "editor.renderWhitespace": "boundary",
+    "editor.accessibilitySupport": "off",
+    "editor.autoClosingBrackets": "always",
+    "editor.autoClosingDelete": "always",
+    "window.autoDetectHighContrast": false,
+    "window.menuBarVisibility": "hidden",
+    "terminal.explorerKind": "external",
+    "terminal.external.linuxExec": "alacritty",
+    "background.enabled": true,
+    "background.loop": false,
+    "background.useDefault": false,
+    "background.useFront": false,
+    "background.style": {
+        "content": "''",
+        "pointer-events": "none",
+        "position": "absolute",
+        "z-index": "99999",
+        "width": "100%",
+        "height": "100%",
+        "background-size": "cover",
+        "background-repeat": "no-repeat",
+        "opacity": 0.07
+    },
+    "background.customImages": [
+        "/hdd/media/pictures/wallpapers/wave.jpg",
+        "/hdd/media/pictures/wallpapers/0035.jpg"
+    ],
+    "search.showLineNumbers": true,
+    "window.zoomLevel": -1,
+    "debug.showInlineBreakpointCandidates": false,
+    "audioCues.lineHasBreakpoint": "off"
 }
