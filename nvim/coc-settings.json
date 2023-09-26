@@ -1,0 +1,9 @@
+{
+    "diagnostic.virtualText": true,
+    "diagnostic.checkCurrentLine": true,
+ 
+    "snippets.ultisnips.directories": [
+        "UltiSnips",
+        "~/.config/nvim/Ultisnips"
+    ]
+}

@@ -1,0 +1,42 @@
+matches:
+  # dates
+  - trigger: ";date-cz"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%d.%m.%Y"
+  - trigger: ";date-iso"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%Y-%m-%d"
+  # plaintext
+  - trigger: ";->"
+    replace: "→"
+  - trigger: ";<-"
+    replace: "←"
+  - trigger: ";^"
+    replace: "↑"
+  - trigger: ";v"
+    replace: "↓"
+  - trigger: ";cpr" # Czech-PaRenthesis
+    replace: "„$|$“"
+  - trigger: ";--"
+    replace: "–"
+
+
+
+
+
+
+  # - trigger: ":shell"
+  #   replace: "{{output}}"
+  #   vars:
+  #     - name: output
+  #       type: shell
+  #       params:
+  #         cmd: "echo 'Hello from your shell'"
