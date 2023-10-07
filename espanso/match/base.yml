@@ -6,7 +6,7 @@ matches:
       - name: mydate
         type: date
         params:
-          format: "%d.%m.%Y"
+          format: "%d. %m. %Y"
   - trigger: ";date-iso"
     replace: "{{mydate}}"
     vars:
@@ -14,22 +14,49 @@ matches:
         type: date
         params:
           format: "%Y-%m-%d"
+  
+  # classic symbols with varying shortcuts
+  - trigger: ";tilde"
+    replace: "~"
+  - trigger: ";caret"
+    replace: "^"
+  - trigger: ";..."
+    replace: "…"
+
   # plaintext
   - trigger: ";->"
     replace: "→"
   - trigger: ";<-"
     replace: "←"
-  - trigger: ";^"
+  - trigger: ";/\\"
     replace: "↑"
-  - trigger: ";v"
+  - trigger: ";\\/"
     replace: "↓"
-  - trigger: ";cpr" # Czech-PaRenthesis
-    replace: "„$|$“"
+  - trigger: ";deg"
+    replace: "°"
   - trigger: ";--"
     replace: "–"
+  - trigger: ";nbsp"
+    replace: " "
+
+  # Czech typographic specifics
+  - trigger: ";cqt" # Czech QuoTations
+    replace: "„$|$“"
+  - trigger: ";cap" # Czech APostrophe
+    replace: "‘"
+
+  # Math related
+  - trigger: ";u2"
+    replace: "²"
+  - trigger: ";l2"
+    replace: "₂"
+  - trigger: ";mult"
+    replace: "×"
 
 
-
+  # Other
+  - trigger: ";oma" # Obsidan Math Align
+    replace: "$$\\begin{align*}\n $|$ \n\\end{align*}$$"
 
 
 
