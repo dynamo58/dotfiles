@@ -1,0 +1,57 @@
+terminal_title: "[broot] {file-name}"
+
+# https://docs.rs/chrono/0.4.11/chrono/format/strftime/index.html
+date_time_format: %d.%m.%Y %R
+
+show_selection_mark: true # true == mark select line with triangle
+
+icon_theme: vscode # https://dystroy.org/broot/icons
+
+
+# Setting "list":"never" on a dir prevents broot from looking at its 
+#  children when searching, unless the dir is the selected root.
+# Setting "sum":"never" on a dir prevents broot from looking at its
+#  children when computing the total size and count of files.
+# Setting "show":"always" makes a file visible even if its name
+#  starts with a dot.
+# Setting "list":"always" may be useful on a link to a directory
+#  (they're otherwise not entered by broot unless selected)
+#
+special_paths: {
+    "/media" : {
+        list: "never"
+        sum: "never"
+    }
+    "~/.config": { "show": "always" }
+    "trav": {
+        show: always
+        list: "always",
+        sum: "never"
+    }
+}
+
+# quit_on_last_cancel: true # true === exit when <Esc> and nothing to cancel
+
+ext_colors: {
+    rs: yellow
+    ts: blue
+    tsx: blue
+}
+
+content_search_max_file_size: 10MB
+
+# update_work_dir: false # true == sync process work dir with current panel' root 
+
+
+imports: [
+    verbs.hjson
+
+    {
+        luma: [
+            light
+            dark
+            unknown
+        ]
+        file: skins/dark-blue.hjson
+    }
+]

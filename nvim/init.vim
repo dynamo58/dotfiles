@@ -1,18 +1,3 @@
-call plug#begin()
-
-Plug 'mg979/vim-visual-multi'
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
-Plug 'lervag/vimtex'
-Plug 'preservim/nerdtree'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
-call plug#end()
-
-source $HOME/.config/nvim/plug-config/ultisnips.vim
-source $HOME/.config/nvim/plug-config/coc.vim
-source $HOME/.config/nvim/plug-config/vimtex.vim
-
 set number                      " enable line numbers
 set noswapfile                  " no swap file
 set backspace=indent,eol,start  " let Let backspace delete indentations
@@ -32,11 +17,10 @@ set rnu
 set wildignore+=*/node_modules/*,*/dist/*,*/__pycache__/*,*/venv/*
 set scrolloff=2
 
-nnoremap <F2>  :NERDTreeToggle <CR>
 nnoremap <C-s> :w!             <CR>
 nnoremap <C-y> :wq!            <CR>
 nnoremap <C-q> :q!             <CR>
 
 syntax on
-colorscheme gruvbox
+colorscheme pixelmuerto
 hi Normal guibg=NONE ctermbg=NONE

@@ -4,13 +4,12 @@
     "editor.tabSize": 4,
     "editor.insertSpaces": false,
     "editor.detectIndentation": true,
-    "editor.fontFamily": "'Cascadia Mono', 'agave Nerd Font Mono', 'FantasqueSansMono Nerd Font', 'DinaRemasterII', 'Hasklug Nerd Font', 'Iosevka', 'Iosevka'",
+    "editor.fontFamily": "'DinaRemasterII', '', '', 'Hasklug Nerd Font', 'Iosevka', 'Iosevka'",
     "editor.fontWeight": "400",
     "editor.wordWrap": "on",
     "editor.minimap.enabled": false,
     "explorer.confirmDelete": false,
     "editor.suggestSelection": "first",
-    "workbench.editor.untitled.hint": "hidden",
     "security.workspace.trust.untrustedFiles": "open",
     "extensions.ignoreRecommendations": true,
     "workbench.startupEditor": "none",
@@ -29,7 +28,7 @@
     "explorer.confirmDragAndDrop": false,
     "git.confirmSync": false,
     "security.workspace.trust.banner": "never",
-    "terminal.integrated.fontSize": 24,
+    "terminal.integrated.fontSize": 16,
     "git.enableSmartCommit": true,
     "rust-analyzer.callInfo.full": false,
     "editor.guides.bracketPairsHorizontal": false,
@@ -37,10 +36,10 @@
     "editor.fontLigatures": true,
     "security.workspace.trust.enabled": false,
     "editor.multiCursorModifier": "ctrlCmd",
-    "editor.rulers": [
-        80,
-        120
-    ],
+    // "editor.rulers": [
+    //     80,
+    //     120
+    // ],
     "[typescript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
@@ -57,7 +56,7 @@
         "editor.suggest.snippetsPreventQuickSuggestions": false,
         "editor.suggestSelection": "first",
         "editor.tabCompletion": "onlySnippets",
-        "editor.wordBasedSuggestions": false
+        "editor.wordBasedSuggestions": "off"
     },
     "editor.formatOnPaste": true,
     "editor.bracketPairColorization.enabled": false,
@@ -69,40 +68,24 @@
     "window.autoDetectHighContrast": false,
     "terminal.explorerKind": "external",
     "terminal.external.linuxExec": "alacritty",
-    "background.enabled": true,
-    "background.loop": false,
-    "background.useDefault": false,
-    "background.useFront": false,
-    "background.style": {
-        "content": "''",
-        "pointer-events": "none",
-        "position": "absolute",
-        "z-index": "99999",
-        "width": "100%",
-        "height": "100%",
-        "background-size": "cover",
-        "background-repeat": "no-repeat",
-        "opacity": 0.07
-    },
-    "background.customImages": [
-        "/hdd/media/pictures/wallpapers/wave.jpg",
-        "/hdd/media/pictures/wallpapers/0035.jpg"
-    ],
     "search.showLineNumbers": true,
     "debug.showInlineBreakpointCandidates": false,
-    "audioCues.lineHasBreakpoint": "off",
     "typescript.updateImportsOnFileMove.enabled": "always",
     "gitlens.codeLens.enabled": false,
     "gitlens.statusBar.enabled": false,
     "liveServer.settings.donotShowInfoMsg": true,
     "workbench.iconTheme": "vscode-icons",
-    "discord.enabled": true,
-    // "customizeUI.activityBar": "wide",
+    "editor.renderLineHighlight": "none",
     "window.menuBarVisibility": "toggle",
-    // "workbench.activityBar.visible": false,
     // "workbench.statusBar.visible": false,
     "workbench.colorCustomizations": {
         // "editor.background": "#080808"
     },
-    "workbench.colorTheme": "Default Dark+"
+    "workbench.editor.empty.hint": "hidden",
+    "workbench.colorTheme": "Batman Mono",
+    "editor.guides.indentation": false,
+    "gitlens.currentLine.enabled": false,
+    "accessibility.signals.lineHasBreakpoint": {
+        "sound": "off"
+    }
 }

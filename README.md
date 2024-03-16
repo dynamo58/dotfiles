@@ -1,42 +1,38 @@
-# dynamo58's dotfiles
+<div align="center">
+	<img src="./logo.webp" style="border-radius:20px" />
+</div>
 
-<!-- <div align="center">
-	<img src=".screen.png" />
-</div> -->
-
-## Programs
-Some of the programs that I currently use...
-
-Setup
-- OS:         Arch Linux
-- DE:         Xfce 4
-- WM:         Xfwm4
-- Audio:      PipeWire
-- AUR helper: yay
-- Shell:      zsh
-
-Terminal & environment
-- Terminal:             alacritty
-- Terminal prompt:      <custom>
-- Bar:                  polybar
+**System**
+- OS:                   Arch Linux
+- DE:                   Xfce4
+- WM:                   Xfwm4
+- Audio:                PipeWire
+- Package manager:      pacman (yay as helper)
+- Shell:                zsh (zinit as plugin manager)
+- Terminal emulator:    wezterm
+- Terminal prompt:      \[custom\]
+- Panel:                polybar
 - GTK Theme:            Adwaita-dark
-- File explorer:        Thunar
+- File explorer:        Thunar for GUI, broot for TUI
 - Application launcher: rofi
 - Browser:              Firefox (developer edition)
-- Text editor:          nvim
-- Code editor:          VSCodium
+- Text editor:          neovim
+- Code editor:          VSCodium (VSCode with *some* telemetry removed)
 
-Media
-- Image viewing: sxiv
-- Image editor:  gthumb
-- Video viewing: mpv
-- Video editor:  Kdenlive / FFmpeg / lossless-cut
-- Music player:  mpv
-- Recording:     OBS / kazam / gpu-screen-recorder
-- Screenshots:   xfce4-screenshoter
-- Document viewer: zathura (mupdf)
+**Replacements**
+- bat for cat
+- eza for ls
 
-Other programs worth mentioning
+**Media**
+- Image viewer/editor:  gthumb
+- Video playback:       mpv
+- Video editor:         Kdenlive / FFmpeg / lossless-cut
+- Music player:         mpv
+- Recording:            OBS / kazam / gpu-screen-recorder
+- Screenshots:          xfce4-screenshoter
+- Document viewer:      zathura (mupdf)
+
+**Honorable mentions**
 - [piper](https://github.com/libratbag/piper)   - mouse configuration
 - [filelight](https://github.com/KDE/filelight) - disk space visualization
 - [obsidian](https://obsidian.md/)              - note taking

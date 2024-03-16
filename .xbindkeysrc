@@ -27,15 +27,12 @@
 # Shift+... 
 
 
-
-
 #keystate_numlock = enable
 #keystate_scrolllock = enable
 #keystate_capslock = enable
 
 
-
-"alacritty"
+"wezterm"
     m:0x50 + c:53
     Mod2+Mod4 + x 
 
