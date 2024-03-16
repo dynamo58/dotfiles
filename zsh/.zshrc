@@ -65,22 +65,6 @@ ytmp3() {
     yt-dlp --output "%(title)s.%(ext)s" -ciw --extract-audio --audio-format mp3 $1
 }
 
-# wrapper to use mpv as a music player
-# example: mpv-music ./my-awesome-playlist
-# source:
-#     https://www.reddit.com/r/mpv/comments/kf4zdq/comment/gg6fyc4/?utm_source=share&utm_medium=web2x&context=3
-#     https://www.reddit.com/r/mpv/comments/ukn0ko/mpv_shuffle_from_multiple_directories/
-mpv-music() {
-    mpv --input-ipc-server=/tmp/mpvsocket \
-        --vo=null \
-        --video=no \
-        --no-video \
-        --term-osd-bar \
-        --no-resume-playback \
-        --shuffle \
-        "$@"
-}
-
 # ===================================
 #   PLUGINS
 # ===================================
@@ -106,4 +90,5 @@ zinit light zsh-users/zsh-autosuggestions
 #   PATH MODIFICATION
 # ===================================
 
+export PATH="$PATH:$HOME/.config/scripts"
 source "$HOME/.cargo/env"

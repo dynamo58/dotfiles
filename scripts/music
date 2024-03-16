@@ -1,0 +1,52 @@
+#!/bin/bash
+
+case "$1" in
+    spawnkill)
+        if ! pidof "mpv" > /dev/null; then
+            echo "Playing ${@:2}."
+            mpv --input-ipc-server=/tmp/mpvsocket \
+            --vo=null \
+            --video=no \
+            --no-video \
+            --term-osd-bar \
+            --no-resume-playback \
+            --shuffle \
+            "${@:2}" \
+            &!
+        else
+            echo "Terminating running mpv through socket."
+            echo quit | socat - /tmp/mpvsocket
+        fi
+        ;;
+    current)
+        if [  "$(echo '{ "command": ["get_property", "focused"] }' | socat - /tmp/mpvsocket | jq ".error")"  = "\"property unavailable\"" ]
+        then
+            FILE_NAME=$(echo '{ "command": ["get_property", "filename"] }' | socat - /tmp/mpvsocket | jq ".data" | sed 's/"//g');
+
+            echo "${FILE_NAME%.*}"
+        else
+            echo ""
+        fi
+        ;;
+    next)
+        echo playlist-next | socat - /tmp/mpvsocket
+        ;;
+    prev)
+        echo playlist-prev | socat - /tmp/mpvsocket
+        ;;
+    pause)
+		echo cycle pause | socat - /tmp/mpvsocket
+        ;;
+    volup)
+        echo add volume +5 | socat - /tmp/mpvsocket
+        ;;
+    voldown)
+        echo add volume -5 | socat - /tmp/mpvsocket
+        ;;
+    *)
+        echo "Usage: music {spawnkill|current|next|prev|pause|volup|voldown} <location(s)>"
+        exit 1
+        ;;
+esac
+
+exit 0
