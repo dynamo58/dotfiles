@@ -1,7 +1,7 @@
 "wezterm"
     Mod2+Mod4 + x 
 
-"rofi -show run -font 'unscii 16'"
+"rofi -show run -font 'JetBrains Mono 12'"
     Mod2+Mod4 + y
 
 "firefox-developer-edition"

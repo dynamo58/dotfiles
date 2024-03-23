@@ -4,7 +4,7 @@
     "editor.tabSize": 4,
     "editor.insertSpaces": false,
     "editor.detectIndentation": true,
-    "editor.fontFamily": "'DinaRemasterII', '', '', 'Hasklug Nerd Font', 'Iosevka', 'Iosevka'",
+    "editor.fontFamily": "'JetBrains Mono', 'DinaRemasterII', '', '', 'Hasklug Nerd Font', 'Iosevka', 'Iosevka'",
     "editor.fontWeight": "400",
     "editor.wordWrap": "on",
     "editor.minimap.enabled": false,

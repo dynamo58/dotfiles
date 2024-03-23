@@ -1,4 +1,3 @@
--- Pull in the wezterm API
 local wezterm = require 'wezterm'
 local act = wezterm.action
 
@@ -18,17 +17,16 @@ config.colors = {
 config.font = wezterm.font 'JetBrains Mono'
 
 config.keys = {
-  { key = 'f',          mods = 'ALT',   action = wezterm.action.ToggleFullScreen                                 },
-  { key = 'RightArrow', mods = 'ALT',   action = wezterm.action.SplitHorizontal { domain = 'CurrentPaneDomain' } },
-  { key = 'DownArrow',  mods = 'ALT',   action = wezterm.action.SplitVertical { domain = 'CurrentPaneDomain' }   },
-  { key = 'LeftArrow',  mods = 'SHIFT', action = act.ActivatePaneDirection 'Left'                                },
-  { key = 'RightArrow', mods = 'SHIFT', action = act.ActivatePaneDirection 'Right'                               },
-  { key = 'UpArrow',    mods = 'SHIFT', action = act.ActivatePaneDirection 'Up'                                  },
-  { key = 'DownArrow',  mods = 'SHIFT', action = act.ActivatePaneDirection 'Down'                                },
+  { key = 'f',          mods = 'ALT',   action = act.ToggleFullScreen                                 },
+  { key = 'RightArrow', mods = 'ALT',   action = act.SplitHorizontal { domain = 'CurrentPaneDomain' } },
+  { key = 'DownArrow',  mods = 'ALT',   action = act.SplitVertical { domain = 'CurrentPaneDomain' }   },
+  { key = 'LeftArrow',  mods = 'SHIFT', action = act.ActivatePaneDirection 'Left'                     },
+  { key = 'RightArrow', mods = 'SHIFT', action = act.ActivatePaneDirection 'Right'                    },
+  { key = 'UpArrow',    mods = 'SHIFT', action = act.ActivatePaneDirection 'Up'                       },
+  { key = 'DownArrow',  mods = 'SHIFT', action = act.ActivatePaneDirection 'Down'                     },
 }
 
 config.adjust_window_size_when_changing_font_size = false
+config.hide_tab_bar_if_only_one_tab = true
 
-
--- and finally, return the configuration to wezterm
 return config
