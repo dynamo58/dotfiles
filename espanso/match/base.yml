@@ -16,9 +16,9 @@ matches:
           format: "%Y-%m-%d"
   
   # classic symbols with varying shortcuts
-  - trigger: ";tilde"
+  - trigger: ";til"
     replace: "~"
-  - trigger: ";caret"
+  - trigger: ";car"
     replace: "^"
   - trigger: ";..."
     replace: "…"

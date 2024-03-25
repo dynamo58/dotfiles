@@ -1,0 +1,43 @@
+#!/bin/sh
+
+# WIP
+
+# aur helper
+pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
+cd
+
+# install packages
+yay -S github-cli \
+	xorg-xinput piper \
+	gnome-font-viewer noto-fonts-emoji ttf-nerd-fonts-symbols ttf-jetbrains-mono-nerd ttf-cmu-serif \
+	wezterm zsh eza bat broot neofetch \
+	neovim vscodium-bin vscodium-bin-marketplace \
+	chatterino2-7tv-git discord firefox-developer-edition \
+	espanso-x11 xbindkeys rofi \
+	zathura zathura-pdf-mupdf \
+	xwallpaper polybar \
+	socat \
+	mpv gthumb \
+	filelight \
+	obsidian
+
+# remove some xfce junk i dont want
+# 1) all the panel stuff
+yay -R $(pacman -Qi xfce4-panel | grep 'Required By' | cut -d : -f 2) xfce4-panel
+# 2) other apps
+yay -R mousepad xfce4-notes xfce4-appfinder 
+
+# zsh requires this location specifically afaik
+ln .config/zsh/.zshrc
+
+# rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+cd
+
+
+# dummy xfwm theme to remove window title bar
+mkdir -p ~/.themes/vacui/xfwm4/
+touch ~/.themes/vacui/xfwm4/themerc 
+
+# change shell
+chsh -s /bin/sh
