@@ -24,3 +24,6 @@
 
 "music spawnkill ~/Media/Music/"
     Mod2+Mod4 + m
+
+"flameshot gui"
+    Print

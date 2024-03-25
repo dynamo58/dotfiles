@@ -1,4 +1,4 @@
-#!bin/sh
+#!/bin/sh
 
 # setup panel
 killall xfce4-panel 

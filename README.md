@@ -29,7 +29,7 @@
 - Video editor:         Kdenlive / FFmpeg / lossless-cut
 - Music player:         mpv
 - Recording:            OBS / kazam / gpu-screen-recorder
-- Screenshots:          xfce4-screenshoter
+- Screenshots:          flameshot
 - Document viewer:      zathura (mupdf)
 
 **Honorable mentions**
