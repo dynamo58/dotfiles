@@ -7,14 +7,12 @@ killall polybar
 # enable scrolling via middle mouse button
 xinput set-prop $(xinput list "pointer:Logitech G305" | grep id= | cut -d=   -f2 | awk '{print $1}') "libinput Scroll Method Enabled" 0, 0, 1
 
-# set wallpapers
-xwallpaper --zoom /home/smolik/.config/wallpaper --output HDMI-0 --output DP-0
-
 # panel
-polybar --config=$HOME/.config/polybar/config.ini main &!
-
-# text expander
-espanso start
+polybar main &!
 
 # keybinds manager
-xbindkeys -f /home/smolik/.config/.xbindkeysrc
+xbindkeys -f $HOME/.config/.xbindkeysrc
+
+# background
+feh --bg-fill $HOME/.config/wall.jpg
+

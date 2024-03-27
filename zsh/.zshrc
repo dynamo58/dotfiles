@@ -92,3 +92,5 @@ zinit light zsh-users/zsh-autosuggestions
 
 export PATH="$PATH:$HOME/.config/scripts"
 source "$HOME/.cargo/env"
+
+source $HOME/.config/broot/launcher/bash/br

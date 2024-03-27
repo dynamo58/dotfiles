@@ -1,27 +1,31 @@
 #!/bin/sh
 
+SOCKET="/tmp/mpv_music_socket"
+LOCK="/tmp/mpv_music_lock"
+
 case "$1" in
-    spawnkill)
-        if ! pidof "mpv" > /dev/null; then
-            echo "Playing ${@:2}."
-            mpv --input-ipc-server=/tmp/mpvsocket \
-            --vo=null \
-            --video=no \
-            --no-video \
-            --term-osd-bar \
-            --no-resume-playback \
-            --shuffle \
-            "${@:2}" \
+    spawn)
+        if [ ! -f $LOCK ]; then
+            mpv --input-ipc-server=$SOCKET \
+                --vo=null \
+                --video=no \
+                --no-video \
+                --term-osd-bar \
+                --no-resume-playback \
+                --shuffle \
+                "${@:2}" \
             &!
+            
+            touch $LOCK
         else
-            echo "Terminating running mpv through socket."
-            echo quit | socat - /tmp/mpvsocket
+            echo quit | socat - $SOCKET
+            rm $LOCK
         fi
         ;;
     current)
-        if [  "$(echo '{ "command": ["get_property", "focused"] }' | socat - /tmp/mpvsocket | jq ".error")"  = "\"property unavailable\"" ]
+        if [  "$(echo '{ "command": ["get_property", "focused"] }' | socat - $SOCKET | jq ".error")"  = "\"property unavailable\"" ]
         then
-            FILE_NAME=$(echo '{ "command": ["get_property", "filename"] }' | socat - /tmp/mpvsocket | jq ".data" | sed 's/"//g');
+            FILE_NAME=$(echo '{ "command": ["get_property", "filename"] }' | socat - $SOCKET | jq ".data" | sed 's/"//g');
 
             echo "${FILE_NAME%.*}"
         else
@@ -29,22 +33,22 @@ case "$1" in
         fi
         ;;
     next)
-        echo playlist-next | socat - /tmp/mpvsocket
+        echo playlist-next | socat - $SOCKET
         ;;
     prev)
-        echo playlist-prev | socat - /tmp/mpvsocket
+        echo playlist-prev | socat - $SOCKET
         ;;
     pause)
-		echo cycle pause | socat - /tmp/mpvsocket
+		echo cycle pause | socat - $SOCKET
         ;;
     volup)
-        echo add volume +5 | socat - /tmp/mpvsocket
+        echo add volume +5 | socat - $SOCKET
         ;;
     voldown)
-        echo add volume -5 | socat - /tmp/mpvsocket
+        echo add volume -5 | socat - $SOCKET
         ;;
     *)
-        echo "Usage: music {spawnkill|current|next|prev|pause|volup|voldown} <location(s)>"
+        echo "Usage: music {spawn <location(s)>|current|next|prev|pause|volup|voldown}"
         exit 1
         ;;
 esac

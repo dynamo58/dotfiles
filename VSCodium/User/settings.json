@@ -14,6 +14,7 @@
     "extensions.ignoreRecommendations": true,
     "workbench.startupEditor": "none",
     "security.workspace.trust.startupPrompt": "never",
+    "python.languageServer": "Jedi",
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook",
         "*.pdf": "default",
@@ -87,5 +88,11 @@
     "gitlens.currentLine.enabled": false,
     "accessibility.signals.lineHasBreakpoint": {
         "sound": "off"
-    }
+    },
+    "[python]": {
+    
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.formatOnType": true,
+        "editor.wordBasedSuggestions": "off"
+    },
 }

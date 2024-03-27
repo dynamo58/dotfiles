@@ -15,7 +15,7 @@ yay -S github-cli \
 	chatterino2-7tv-git discord firefox-developer-edition \
 	espanso-x11 xbindkeys rofi \
 	zathura zathura-pdf-mupdf \
-	xwallpaper polybar \
+	feh polybar \
 	socat \
 	mpv gthumb \
 	filelight \
@@ -40,4 +40,5 @@ mkdir -p ~/.themes/vacui/xfwm4/
 touch ~/.themes/vacui/xfwm4/themerc 
 
 # change shell
-chsh -s /bin/sh
+chsh -s /bin/zsh
+

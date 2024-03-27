@@ -22,8 +22,12 @@
 "music voldown"
     Mod2+Mod4 + Down
 
-"music spawnkill ~/Media/Music/"
+"music spawn ~/Media/Music"
     Mod2+Mod4 + m
+
+"music pause"
+    Mod2+Mod4 + n
+
 
 "flameshot gui"
     Print
