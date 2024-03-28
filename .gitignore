@@ -92,8 +92,22 @@ wallpaper
 xarchiver
 xfburn
 xfce4/*
-xfce4-dict
 !xfce4/zathura
+!xfce4/xfconf/
+xfce4/xfconf/xfce-perchannel-xml/displays.xml
+xfce4/xfconf/xfce-perchannel-xml/keyboard-layout.xml
+xfce4/xfconf/xfce-perchannel-xml/thunar.xml
+xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml
+xfce4/xfconf/xfce-perchannel-xml/xfce4-notifyd.xml
+xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml
+xfce4/xfconf/xfce-perchannel-xml/xfce4-power-manager.xml
+xfce4/xfconf/xfce-perchannel-xml/xfce4-screenshooter.xml
+xfce4/xfconf/xfce-perchannel-xml/xfce4-session.xml
+xfce4/xfconf/xfce-perchannel-xml/xfce4-settins-manager.xml
+
+# xfce4/xfconf/xfce-perchannel-xml/xfce4-keyboard-shortcuts.xml
+
+xfce4-dict
 xfe
 xournalpp
 yarn
