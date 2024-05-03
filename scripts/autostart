@@ -13,6 +13,8 @@ polybar main &!
 # keybinds manager
 xbindkeys -f $HOME/.config/.xbindkeysrc
 
-# background
+# wallpaper
 feh --bg-fill $HOME/.config/wall.jpg
 
+# volume icon for system tray
+pnmixer &
