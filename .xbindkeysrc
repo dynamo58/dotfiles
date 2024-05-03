@@ -4,6 +4,9 @@
 "rofi -show run -font 'JetBrains Mono 12'"
     Mod2+Mod4 + y
 
+"rofi -modi emoji -show emoji"
+    Mod2+Mod4 + v
+
 "firefox-developer-edition"
     Mod2+Mod4 + f 
 
@@ -17,10 +20,10 @@
     Mod2+Mod4 + Left
 
 "music volup"
-    Mod2+Mod4 + Up
+    Mod2 + Mod4 + Up
 
 "music voldown"
-    Mod2+Mod4 + Down
+    Mod2 + Mod4 + Down
 
 "music spawn ~/Media/Music"
     Mod2+Mod4 + m
