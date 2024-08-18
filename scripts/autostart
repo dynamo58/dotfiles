@@ -14,7 +14,7 @@ polybar main &!
 xbindkeys -f $HOME/.config/.xbindkeysrc
 
 # wallpaper
-feh --bg-fill $HOME/.config/wall.jpg
+feh --bg-fill $HOME/.config/wall
 
 # volume icon for system tray
 pnmixer &

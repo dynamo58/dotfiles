@@ -5,7 +5,7 @@
     <property name="ThemeName" type="string" value="Adwaita-dark"/>
     <property name="IconThemeName" type="string" value="Adwaita"/>
     <property name="DoubleClickTime" type="empty"/>
-    <property name="DoubleClickDistance" type="empty"/>
+    <property name="DoubleClickDistance" type="int" value="5"/>
     <property name="DndDragThreshold" type="empty"/>
     <property name="CursorBlink" type="empty"/>
     <property name="CursorBlinkTime" type="empty"/>
@@ -32,7 +32,7 @@
     <property name="MenuImages" type="empty"/>
     <property name="ButtonImages" type="empty"/>
     <property name="MenuBarAccel" type="empty"/>
-    <property name="CursorThemeName" type="empty"/>
+    <property name="CursorThemeName" type="string" value="Adwaita"/>
     <property name="CursorThemeSize" type="empty"/>
     <property name="DecorationLayout" type="empty"/>
     <property name="DialogsUseHeader" type="empty"/>

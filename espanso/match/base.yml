@@ -14,7 +14,7 @@ matches:
         type: date
         params:
           format: "%Y-%m-%d"
-  
+
   # classic symbols with varying shortcuts
   - trigger: ";til"
     replace: "~"
@@ -53,12 +53,12 @@ matches:
   - trigger: ";mult"
     replace: "×"
 
-
   # Other
   - trigger: ";oma" # Obsidan Math Align
     replace: "$$\\begin{align*}\n $|$ \n\\end{align*}$$"
 
-
+  - regex: ";\\((?P<COLOR>.*)\\)"
+    replace: '<span style="color:{{COLOR}}">$|$</span>'
 
   # - trigger: ":shell"
   #   replace: "{{output}}"

@@ -1,7 +1,7 @@
 local wezterm = require 'wezterm'
 local act = wezterm.action
 
-local BG = "#000"
+local BG = "#101010"
 
 local config = wezterm.config_builder()
 
@@ -12,9 +12,10 @@ config.window_frame = {
   inactive_titlebar_bg = BG,
 }
 config.colors = {
-  background = BG,
+    background = BG,
 }
 config.font = wezterm.font 'JetBrains Mono'
+config.font_size = 14
 
 config.keys = {
   { key = 'f',          mods = 'ALT',   action = act.ToggleFullScreen                                 },
@@ -26,7 +27,10 @@ config.keys = {
   { key = 'DownArrow',  mods = 'SHIFT', action = act.ActivatePaneDirection 'Down'                     },
 }
 
+-- config.window_startup_mode = "Maximized"
+
 config.adjust_window_size_when_changing_font_size = false
 config.hide_tab_bar_if_only_one_tab = true
+
 
 return config

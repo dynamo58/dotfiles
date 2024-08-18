@@ -109,5 +109,9 @@
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.colorTheme": "Mokka: Green"
+  "workbench.colorTheme": "Solarized Light",
+  "arduino.useArduinoCli": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
