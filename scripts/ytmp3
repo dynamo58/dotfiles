@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# wrapper for yt-dlp audio extraction
+# example: ytmp3 <link>
+yt-dlp --output "%(title)s.%(ext)s" -ciw --extract-audio --audio-format mp3 $1

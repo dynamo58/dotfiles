@@ -45,25 +45,11 @@ PS1="\
 # SHORTCUTS
 # ===================================
 
-export EDITOR="nvim"
-export VISUAL="nvim"
-
-alias ls="eza"
-alias cat="bat"
-
-alias code='vscodium'
+export EDITOR="vim"
+export VISUAL="vim"
 alias reload_font_cache='fc-cache -f -v'
 alias pomodoro='porsmo p c 45m 15m 15m'
 
-# ===================================
-# UTILS
-# ===================================
-
-# wrapper for yt-dlp audio extraction
-# example: ytmp3 <link>
-ytmp3() {
-    yt-dlp --output "%(title)s.%(ext)s" -ciw --extract-audio --audio-format mp3 $1
-}
 
 # ===================================
 #   PLUGINS
@@ -92,5 +78,3 @@ zinit light zsh-users/zsh-autosuggestions
 
 export PATH="$PATH:$HOME/.config/scripts"
 source "$HOME/.cargo/env"
-
-source $HOME/.config/broot/launcher/bash/br
