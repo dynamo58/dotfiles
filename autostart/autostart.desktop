@@ -1,6 +1,0 @@
-[Desktop Entry]
-Encoding=UTF-8
-Type=Application
-Name=autost
-Exec=sh -e -c "/home/$(whoami)/.config/scripts/autostart"
-Hidden=false

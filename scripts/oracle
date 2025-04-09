@@ -1,0 +1,37 @@
+#!/bin/bash
+
+QUERY=$(rofi -dmenu -p "*")
+
+if ! [ -n "$QUERY" ]; then
+    exit 1
+fi
+
+choose_base_url() {
+    case "$1" in
+        ddg)  echo "https://duckduckgo.com/?q=" ;;
+        g)    echo "https://www.google.com/search?q=" ;;
+        y)    echo "https://www.youtube.com/results?search_query=" ;;
+        w)    echo "https://en.wikipedia.org/wiki/Special:Search?search=" ;;
+        c)    echo "https://crates.io/search?q=" ;;
+        docs) echo "https://docs.rs/releases/search?query=" ;;
+        gpt)  echo "https://chatgpt.com/?q=" ;;
+        t)    echo "https://www.twitch.tv/search?term=" ;;
+    esac
+}
+
+BASE_URL=""
+for word in $QUERY; do
+  if [[ "$word" == !* ]]; then
+    bang="${word:1}"
+    BASE_URL=$(choose_base_url $bang)
+    QUERY="${QUERY//$word/}"
+  fi
+done
+
+QUERY=$(echo "$QUERY" | sed 's/^ *//; s/ *$//; s/  / /g')
+
+if [ -z "$BASE_URL" ]; then
+    BASE_URL="https://"
+fi
+
+xdg-open "$BASE_URL$QUERY"

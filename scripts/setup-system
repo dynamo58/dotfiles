@@ -7,40 +7,20 @@ cd
 # install packages
 yay -S  github-cli \
 	gnome-font-viewer noto-fonts-emoji ttf-nerd-fonts-symbols ttf-jetbrains-mono-nerd ttf-cmu-serif ebgaramond-otf \
-	wezterm zsh neofetch \
-	vscodium-bin vscodium-bin-marketplace \
+	wezterm zsh neofetch polybar picom \
+	zed \
 	chatterino2-7tv-git discord discord-update-skip-git firefox-developer-edition \
-	espanso-x11 xbindkeys rofi-emoji \
+	espanso-x11 rofi-emoji \
 	zathura zathura-pdf-mupdf \
-	feh polybar \
+	feh  flameshot mpv gthumb tauon-music-box \
 	socat \
-	mpv gthumb \
 	filelight \
-	obsidian \
-	rustup \
+	obsidian anki-bin \
+	rust \
 	pnmixer \
-	obs-studio-liberty \
-	yt-dlp \
-	ffmpeg \
-	anki-bin \
-	flameshot
+	obs-studio-liberty yt-dlp ffmpeg \
+	i3-wm i3-resurrect
 
 
-# initialize rust toolchain (cargo, etc.)
-rustup default stable
-
-# remove some xfce junk i dont want
-# 1) all the panel stuff
-yay -R $(pacman -Qi xfce4-panel | grep 'Required By' | cut -d : -f 2) xfce4-panel mousepad xfce4-notes xfce4-appfinder 
-
-# zsh requires this location specifically afaik
 ln .config/zsh/.zshrc
-
-
-# dummy xfwm theme to remove window title bar
-mkdir -p ~/.themes/vacui/xfwm4/
-touch ~/.themes/vacui/xfwm4/themerc 
-
-# change shell
 chsh -s /bin/zsh
-
